@@ -313,14 +313,14 @@ img {
 
 .what-we-do-text {
   position: absolute;
+  height: 70px;
   bottom: 0;
   left: 0;
 
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  text-align: center;
   color: var(--secondary-font-color);
   background-color: rgba(47, 48, 58, 0.8);
 }
@@ -450,18 +450,10 @@ img {
   background-color: var(--background-color-secondary);
 }
 
-.logo-footer {
+.footer .logo {
   display: inline-block;
   margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--secondary-font-color);
-}
-.logo-footer span {
-  color: var(--accent-color);
 }
 
 .fcontact-item {
@@ -692,6 +684,15 @@ img {
 .button-close {
   position: absolute;
   top: 8px;
-  right: 4px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   background-color: var(--secondary-font-color);
 }
